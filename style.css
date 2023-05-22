@@ -325,3 +325,172 @@ nav img {
         font-size: 20px;
     }
 }
+
+/* RESPONSIVE DESIGN FOR MOBILE VIEW */
+@media screen and (max-width: 640px) {
+    nav ul {
+        display: none;
+    }
+    #menu-icon {
+        display: flex;
+        width: 40px;
+    }
+    #navMobile ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        right: 0%;
+        left: 0%;
+        width: 100%;
+        background-color: white;
+    }
+    #navMobile li {
+        margin-bottom: 60px;
+        list-style: none;
+    }
+    #navMobile a {
+        color: var(--black);
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    /* HERO SECTION */
+    #hero-section {
+        justify-content: space-around;
+        padding-top: 15%;
+    }
+    .hero-section-img {
+        display: none;
+    }
+    .hero-section-texts {
+        background-image: url("images/mobile.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-section-texts h1 {
+        font-size: 31px;
+        width: 100%;
+        letter-spacing: 1px;
+    }
+    .hero-section-texts p {
+        padding-top: 20px;
+        font-size: 18px;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    /* SVELTE SOCIETY 9JA */
+    .svelte-society-9ja {
+        margin-top: 5%;
+    }
+    .svelte-society-9ja-write {
+        text-align: center;
+    }
+    .svelte-society-9ja-write h1 {
+        width: 100%;
+    }
+    .svelte-society-9ja-write p {
+        display: none;
+    }
+    .svelte-society-9ja-write button {
+        display: none;
+    }
+
+    /* EVENTS-COMMUNITY-RESOURCES */
+    .event-community-resources {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        margin-top: 50px;
+        padding-top: 100px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .event-community-resources h3 {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .event-community-resources p {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .write {
+        width: 100%;
+    }
+
+    /* EVENTS */
+    .events {
+        display: block;
+    }
+    .events img {
+        width: 100%;
+    }
+
+    /* COMMUNITY */
+    .community {
+        display: block;
+    }
+    .community img {
+        width: 100%;
+    }
+
+    /* RESOURCES */
+    .resources {
+        display: block;
+    }
+    .resources img {
+        width: 100%;
+    }
+
+    /* ICON NAV */
+    #icon-nav p {
+        color: white;
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    .icon {
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    .icon a {
+        margin: 0 17px;
+    }
+    .icon img {
+        width: 40px;
+    }
+
+    /* NAVIGATION */
+    .up {
+        position: relative;
+        left: 40%;
+        padding-top: 15px;
+    }
+    .upImg {
+        width: 40px;
+    }
+    #icon-nav ul {
+        padding-bottom: 8%;
+    }
+    #icon-nav li {
+        margin: 0 18px;
+    }
+
+    /* TOOLS, RECIPES, TEMPLATES & COMPONENTS */
+    .tools-recipes-templates-components {
+        padding-bottom: 8%;
+    }
+    .tools-recipes-templates-components a {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
