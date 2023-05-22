@@ -1,0 +1,235 @@
+:root {
+    --black: #000000;
+    --orange: #FE3E00;
+    --navy-blue-kinda: #011627;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Unna', serif;
+}
+
+#desktopNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#desktopNav ul {
+    display: flex;
+}
+#desktopNav li {
+    margin-right: 60px;
+    list-style: none;
+}
+#desktopNav a {
+    color: var(--black);
+    text-decoration: none;
+}
+#desktopNav img {
+    width: 70px;
+}
+
+#hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 7%;
+}
+.hero-section-texts {
+    width: 35%;
+}
+.hero-section-texts h1 {
+    font-size: 50px;
+    width: 550px;
+    letter-spacing: 2px;
+}
+.hero-section-texts p {
+    padding-top: 30px;
+    font-size: 25px;
+    width: 550px;
+    padding-bottom: 30px;
+}
+.hero-section-texts button {
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid var(--orange);
+}
+.hero-section-texts .fa-sharp {
+    padding-left: 5px;
+}
+.hero-section-texts span {
+    color: var(--orange);
+}
+#hero-section img {
+    width: 40%;
+}
+
+
+
+.svelte-society-9ja {
+    margin-top: 8%;
+    background-color: var(--navy-blue-kinda);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.svelte-society-9ja-write {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.svelte-society-9ja-write h1 {
+    color: var(--orange);
+    padding-top: 60px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.svelte-society-9ja-write p {
+    color: var(--orange);
+    padding-top: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 70%;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+.svelte-society-9ja-write button {
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid var(--orange);
+}
+
+
+/* EVENTS-COMMUNITY-RESOURCES */
+.event-community-resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 100px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+.event-community-resources h3 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.event-community-resources p {
+    width: 80%;
+    padding-bottom: 80px;
+}
+.event-community-resources button {
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid var(--orange);
+}
+.write {
+    width: 30%;
+}
+
+/* EVENTS */
+.events {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-bottom: 70px;
+}
+
+/* COMMUNITY */
+.community {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 80%;
+    padding-bottom: 70px;
+}
+
+/* RESOURCES */
+.resources {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-bottom: 70px;
+}
+
+/* ICON NAV */
+#icon-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#icon-nav p {
+    color: white;
+}
+.up {
+    position: relative;
+    left: 46%;
+    padding-top: 15px;
+}
+.upImg {
+    width: 40px;
+}
+
+.icon {
+    padding-top: 8%;
+    padding-bottom: 10%;
+}
+.icon a {
+    margin-right: 18px;
+}
+.icon img {
+    width: 50px;
+}
+
+/* NAVIGATION */
+#icon-nav ul {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+}
+#icon-nav li {
+    margin: 0 25px;
+    list-style: none;
+}
+#icon-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* TOOLS, RECIPES, TEMPLATES & COMPONENTS */
+.tools-recipes-templates-components {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+}
+.tools-recipes-templates-components a {
+    margin-right: 15px;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+}
+.tools-recipes-templates-components hr {
+    height: 15px;
+}
