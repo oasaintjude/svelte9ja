@@ -10,35 +10,51 @@
     font-family: 'Unna', serif;
 }
 
-#desktopNav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
-#desktopNav ul {
+nav ul {
     display: flex;
 }
-#desktopNav li {
+nav li {
     margin-right: 60px;
     list-style: none;
 }
-#desktopNav a {
+nav a {
     color: var(--black);
     text-decoration: none;
 }
-#desktopNav img {
+nav img {
     width: 70px;
 }
+#menu-icon {
+    display: none;
+    /* width: 40px; */
+}
+#navMobile ul{
+    display: none;
+}
 
+/* HERO SECTION */
 #hero-section {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 7%;
+    padding-top: 3%;
 }
 .hero-section-texts {
-    width: 35%;
+    width: 30%;
+}
+.hero-section-img {
+    background-image: url("images/HeroImage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 80vh;
 }
 .hero-section-texts h1 {
     font-size: 50px;
@@ -60,6 +76,7 @@
     justify-content: center;
     background-color: white;
     border: 2px solid var(--orange);
+    cursor: pointer;
 }
 .hero-section-texts .fa-sharp {
     padding-left: 5px;
@@ -67,12 +84,8 @@
 .hero-section-texts span {
     color: var(--orange);
 }
-#hero-section img {
-    width: 40%;
-}
 
-
-
+/* SVELTE SOCIETY 9JA */
 .svelte-society-9ja {
     margin-top: 8%;
     background-color: var(--navy-blue-kinda);
@@ -111,6 +124,7 @@
     justify-content: center;
     background-color: white;
     border: 2px solid var(--orange);
+    cursor: pointer;
 }
 
 
@@ -127,12 +141,11 @@
     border-top-right-radius: 80px;
 }
 .event-community-resources h3 {
-    padding-top: 40px;
     padding-bottom: 20px;
 }
 .event-community-resources p {
-    width: 80%;
-    padding-bottom: 80px;
+    width: 100%;
+    padding-bottom: 20%;
 }
 .event-community-resources button {
     width: 180px;
@@ -143,6 +156,7 @@
     justify-content: center;
     background-color: white;
     border: 2px solid var(--orange);
+    cursor: pointer;
 }
 .write {
     width: 30%;
@@ -151,26 +165,38 @@
 /* EVENTS */
 .events {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 80%;
     padding-bottom: 70px;
+}
+.events img {
+    width: 60%;
 }
 
 /* COMMUNITY */
 .community {
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 80%;
     padding-bottom: 70px;
 }
+.community img {
+    width: 60%;
+}
 
 /* RESOURCES */
 .resources {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 80%;
     padding-bottom: 70px;
+}
+.resources img {
+    width: 60%;
 }
 
 /* ICON NAV */
@@ -182,6 +208,8 @@
 }
 #icon-nav p {
     color: white;
+    font-size: 15px;
+    padding-bottom: 8px;
 }
 .up {
     position: relative;
@@ -232,4 +260,68 @@
 }
 .tools-recipes-templates-components hr {
     height: 15px;
+}
+
+/* RESPONSIVE DESIGN FOR TABLET VIEW */
+@media screen and (min-width: 641px) and (max-width: 1000px) {
+    nav ul {
+        display: none;
+    }
+    #menu-icon {
+        display: flex;
+        width: 40px;
+    }
+    #navMobile ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        right: 0%;
+        left: 0%;
+        width: 100%;
+        background-color: white;
+    }
+    #navMobile li {
+        margin-bottom: 60px;
+        list-style: none;
+    }
+    #navMobile a {
+        color: var(--black);
+        text-decoration: none;
+        font-size: 30px;
+    }
+    
+    /* HERO SECTION */
+    #hero-section {
+        justify-content: space-around;
+        padding-top: 8%;
+    }
+    .hero-section-texts {
+        width: 45%;
+    }
+    .hero-section-img {
+        background-image: url("images/tablethero2.jpg");
+        width: 40%;
+        height: 40vh;
+    }
+    .hero-section-texts h1 {
+        font-size: 31px;
+        width: 100%;
+        letter-spacing: 1px;
+    }
+    .hero-section-texts p {
+        padding-top: 20px;
+        font-size: 18px;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    /* SVELTE SOCIETY 9JA */
+    .svelte-society-9ja-write p {
+        color: white;
+        letter-spacing: 0;
+        width: 100%;
+        font-size: 20px;
+    }
 }

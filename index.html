@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- NAVIGATION -->
-    <nav id="desktopNav">
+    <nav>
         <img src="images/Logo.png" alt="Svelte Logo">
         <ul>
             <li><a href="#">Home</a></li>
@@ -22,7 +22,18 @@
             <li><a href="#">Events</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+
+        <!-- MENU ICON FOR RESPONSIVE Design-->
+        <img onclick="menu()" id="menu-icon" src="images/navMobile.png" alt="menu icon">
     </nav>
+    <div id="navMobile">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
 
     <!-- HERO SECTION -->
     <section id="hero-section">
@@ -31,7 +42,7 @@
             <p>Svelte is a free and open-source front-end JavaScript framework that was first released in 2016. Svelte compiles code at build time, resulting in smaller and faster applications.</p>
             <button>Get Started <i class="fa-sharp fa-solid fa-arrow-right" style="color: #000000;"></i></button>
         </div>
-        <img src="images/Svelte9ja.png" alt="">
+        <div class="hero-section-img"></div>
     </section>
 
     <section class="svelte-society-9ja">
